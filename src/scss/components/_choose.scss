@@ -1,0 +1,124 @@
+.choose {
+  padding-top: rem(200);
+  padding-bottom: rem(190);
+  background-color: var(--light-grey);
+
+  &__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__title {
+    max-width: rem(524);
+  }
+
+  &__description {
+    margin-top: rem(25);
+  }
+
+  &__img {
+    position: relative;
+    max-width: rem(678);
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      padding-top: 85.5%;
+    }
+
+    & > * {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: rem(20);
+    }
+  }
+
+  &__list {
+    margin-top: rem(36);
+  }
+
+  &__benefits {
+    max-width: rem(486);
+
+    &:not(:first-of-type) {
+      margin-top: rem(24);
+    }
+
+    &-block {
+      max-width: rem(339);
+      background-color: #ECECEC;
+      border-radius: rem(49);
+      padding: rem(29) rem(27);
+      display: flex;
+      align-items: center;
+      font-weight: 700;
+
+
+      img {
+        width: rem(19);
+        height: rem(19);
+      }
+
+      span {
+        font-size: rem(19);
+        margin-left: rem(9);
+      }
+    }
+
+    &-description {
+      margin-top: rem(12);
+      margin-left: rem(60);
+    }
+  }
+
+  &__deck {
+    display: flex;
+    justify-content: center;
+    max-width: rem(1148);
+    margin: rem(90) auto 0;
+  }
+
+  &__card {
+    height: fit-content;
+    text-align: center;
+    width: calc(100% / 4 - 30px);
+    margin: 0 rem(15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--white);
+    padding: rem(50) rem(28);
+    border-radius: rem(30);
+
+    &-title {
+      margin-top: rem(15);
+    }
+
+    &-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--light-grey);
+      border-radius: rem(18);
+      width: rem(95);
+      height: rem(96);
+
+      img {
+        width: rem(45);
+        height: rem(48);
+      }
+    }
+
+    &-description {
+      margin-top: rem(12);
+    }
+  }
+}

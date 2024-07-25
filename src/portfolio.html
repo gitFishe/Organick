@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+<div class="site-container">
+  @include('partials/header.html')
+  <main class="main">
+    <section class="page-name">
+      <div class="container">
+        <div class="page-name__bg">
+          <img src="img/portfolio-bg.png" alt="">
+        </div>
+        <div class="title-1 page-name__title"><h1>Portfolio Standard</h1></div>
+      </div>
+    </section>
+    @include('partials/ingredients.html')
+    @include('partials/subscribe.html')
+  </main>
+  @include('partials/footer.html')
+  @include('partials/scripts.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
+</body>
+
+</html>

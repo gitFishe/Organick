@@ -1,0 +1,55 @@
+.quality {
+  padding-top: rem(186);
+  padding-bottom: rem(200);
+  background-color: var(--light-grey);
+
+  &__bg {
+    top: rem(-100);
+    left: rem(-880);
+    position: absolute;
+    width: rem(911);
+    height: rem(867);
+  }
+
+  &__card {
+    display: flex;
+  }
+
+  &__img {
+    flex-shrink: 0;
+    width: rem(101);
+    height: rem(101);
+  }
+
+  &__text {
+    margin-left: rem(20);
+
+    &-title {
+      margin-bottom: rem(5);
+    }
+  }
+
+  &__card {
+    &:not(:last-of-type) {
+      margin-bottom: rem(20);
+    }
+  }
+
+  &__deck {
+    margin-bottom: rem(48);
+  }
+
+  &__content {
+    position: relative;
+    margin-left: auto;
+    max-width: rem(690);
+  }
+
+  &__title {
+    margin-bottom: rem(14);
+  }
+
+  &__description {
+    margin-bottom: rem(46);
+  }
+}

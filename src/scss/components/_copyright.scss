@@ -1,0 +1,38 @@
+.copyright {
+  padding-top: rem(150);
+
+  &__body {
+    > :not(:first-child) {
+      margin-top: rem(100);
+    }
+  }
+
+  &__block {
+    display: flex;
+  }
+
+  &__name {
+    padding-right: rem(20);
+
+    &-description {
+      > :not(:first-child) {
+        margin-top: rem(30) !important;
+      }
+    }
+  }
+
+  &__text {
+    width: rem(831);
+    margin-left: auto;
+
+    > :not(:first-child) {
+      margin-top: rem(45);
+    }
+  }
+
+  &__article {
+    div {
+      margin-bottom: rem(10);
+    }
+  }
+}

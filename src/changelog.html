@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+
+<div class="site-container">
+  @include('partials/header.html')
+  <main class="main">
+    <section class="page-name-white">
+      <div class="container">
+        <div class="title-2 page-name__title page-name__leafs">
+          <img src="img/page-leaf-left.svg" alt="">
+          <h2>Changelog</h2>
+          <img src="img/page-leaf-right.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="admin">
+      <div class="container">
+        <div class="admin__block admin__block-info">
+          <div class="admin__img admin__img-info"><img src="img/admin-img1.png" alt=""></div>
+          <div class="title-3 admin__title"><h3>V.1</h3></div>
+          <div class="description"><p>Initial Organick Webflow Template Release</p></div>
+        </div>
+      </div>
+    </section>
+    @include('partials/subscribe.html')
+  </main>
+  @include('partials/footer.html')
+  @include('partials/scripts.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
+</body>
+
+</html>

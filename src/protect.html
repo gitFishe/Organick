@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body class="page__body">
+<div class="site-container">
+  @include('partials/header.html')
+  <main class="main">
+    <section class="page-name-white">
+      <div class="container">
+        <div class="title-2 page-name__title page-name__leafs">
+          <img src="img/page-leaf-left.svg" alt="">
+          <h2>Protect Page</h2>
+          <img src="img/page-leaf-right.svg" alt="">
+        </div>
+      </div>
+    </section>
+    <section class="admin">
+      <div class="container">
+        <div class="admin__block admin__block-enter">
+          <div class="admin__img admin__img-enter"><img src="img/admin-img2.png" alt=""></div>
+          <div class="admin__content">
+            <span>Password</span>
+            <input type="text" class="input" placeholder="Enter Your Password">
+            <div class="btn">Send Now <img src="img/btn-arrow.svg" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    @include('partials/subscribe.html')
+  </main>
+  @include('partials/footer.html')
+  @include('partials/scripts.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
+</body>
+
+</html>

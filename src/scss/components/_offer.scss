@@ -1,0 +1,25 @@
+.offer {
+  background-color: var(--dark-green);
+  padding: rem(200) 0;
+
+  &__start {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__title {
+    margin-top: rem(8);
+
+    h2 {
+      color: var(--white);
+    }
+  }
+
+  &__btn {
+    margin-top: auto;
+  }
+
+  &__deck {
+    margin-top: rem(50);
+  }
+}

@@ -1,0 +1,69 @@
+.location {
+  padding-top: rem(107);
+
+  &__container {
+    padding: rem(122) 0;
+    padding-right: rem(108);
+    position: relative;
+  }
+
+  &__body {
+    width: rem(514);
+    position: relative;
+    background-color: var(--white);
+    padding: rem(46) rem(53);
+    border-radius: rem(30);
+    margin-left: auto;
+
+    &-description {
+      margin-top: rem(10);
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      border-radius: rem(30);
+    }
+  }
+
+  &__adress {
+    margin-top: rem(19);
+
+    > :not(:first-child) {
+      margin-top: rem(22);
+    }
+  }
+
+  &__card {
+    display: flex;
+  }
+
+  &__img {
+    width: rem(50);
+    height: rem(50);
+  }
+
+  &__text {
+    margin-left: rem(6);
+    width: rem(240);
+    line-height: 165.4%;
+    font-size: rem(18);
+
+    span {
+      color: var(--dark-grey);
+      font-weight: 700;
+    }
+
+    p {
+      color: var(--dark-grey);
+    }
+  }
+}

@@ -1,0 +1,111 @@
+.food {
+  position: relative;
+
+  &__container {
+    max-width: rem(1400);
+  }
+
+  &__start {
+    height: min(86.9vh, rem(1115));
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: calc(100% - rem(217));
+  }
+
+  &__article {
+    display: flex;
+    align-items: center;
+    margin-bottom: rem(20);
+
+    &-name {
+      display: flex;
+      align-items: center;
+      margin-left: rem(30);
+
+      span {
+        font-size: rem(18);
+        margin-left: rem(8);
+      }
+
+      img {
+        width: rem(18) !important;
+        height: rem(20);
+      }
+    }
+  }
+
+  &__info {
+    display: flex;
+    filter: drop-shadow(0px 14px 36px rgba(204, 204, 204, 0.25));
+  }
+
+  &__name {
+    &-big {
+      width: rem(1400);
+      max-width: none;
+      filter: drop-shadow(0px 14px 36px rgba(204, 204, 204, 0.25));
+      border-top-right-radius: rem(30);
+      border-bottom-right-radius: rem(30);
+
+      :last-child {
+        width: rem(726);
+      }
+    }
+
+    background-color: var(--white);
+    max-width: rem(891);
+    border-top-left-radius: rem(30);
+    border-bottom-left-radius: rem(30);
+    padding: rem(97) rem(82);
+
+    > :not(:first-child) {
+      margin-top: rem(20);
+    }
+  }
+
+  &__description {
+    border-top-right-radius: rem(30);
+    border-bottom-right-radius: rem(30);
+    padding: rem(106) rem(111);
+    background-color: #FAFAFA;
+  }
+
+  &__line {
+    display: flex;
+    align-items: start;
+
+    &:not(:first-of-type) {
+      margin-top: rem(17);
+    }
+
+    div {
+      min-width: rem(121);
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+
+      &::after {
+        font-size: rem(23);
+        font-weight: 600;
+        color: var(--dark-green);
+        content: ':';
+      }
+    }
+
+    span {
+      width: rem(153);
+      color: var(--dark-grey);
+      font-size: rem(18);
+      line-height: 200%;
+      margin-left: rem(13);
+    }
+  }
+}

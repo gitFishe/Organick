@@ -1,0 +1,78 @@
+// базовые подключения
+@import "settings";
+@import "vars";
+@import "mixins";
+@import "fonts";
+
+// подключения компонентов страницы
+
+@import "./components/header";
+
+@import "./components/natural";
+
+@import "./components/ncards";
+
+@import "./components/quality";
+
+@import "./components/products";
+
+@import "./components/testimonial";
+
+@import "./components/offer";
+
+@import "./components/eco";
+
+@import "./components/squares";
+
+@import "./components/news";
+
+@import "./components/subscribe";
+
+@import "./components/page-name";
+
+@import "./components/creative";
+
+@import "./components/choose";
+
+@import "./components/team";
+
+@import "./components/soffer";
+
+@import "./components/catalog";
+
+@import "./components/goods";
+
+@import "./components/related";
+
+@import "./components/grow";
+
+@import "./components/only";
+
+@import "./components/farm";
+
+@import "./components/ingredients";
+
+@import "./components/food";
+
+@import "./components/article";
+
+@import "./components/together";
+
+@import "./components/location";
+
+@import "./components/inputs";
+
+@import "./components/not-found";
+
+@import "./components/copyright";
+
+@import "./components/admin";
+
+@import "./components/footer";
+
+
+// маленькие компоненты
+
+//@import "./components/marquee";
+
+

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+
+<div class="site-container">
+  @include('partials/header.html')
+  <main class="main">
+    <section class="page-name">
+      <div class="container">
+        <div class="page-name__bg">
+          <img src="img/titleabout-bg.png" alt="">
+        </div>
+        <div class="title-1 page-name__title"><h1>About Us</h1></div>
+      </div>
+    </section>
+    @include('partials/creative.html')
+    @include('partials/choose.html')
+    <section class="team">
+      <div class="container team__container">
+        <div class="introduction"><span>Team</span></div>
+        <div class="title-2 team__title"><h2>Our Organic Experts</h2></div>
+        <div class="description team__description"><p>Simply dummy text of the printing and typesetting industry. Lorem
+          had
+          ceased to been the industry's standard dummy text ever since the 1500s, when an unknown printer took a
+          galley.</p>
+        </div>
+        <div class="experts">
+          <div class="experts__card">
+            <div class="experts__img"><img src="img/experts-img1.png" alt=""></div>
+            <div class="experts__content">
+              <div class="experts__content-name">
+                <div class="title-6 experts__content-title"><h6>Giovani Bacardo</h6></div>
+                <div class="introduction experts__introduction"><span>Farmer</span></div>
+              </div>
+              <div class="experts__content-img">
+                <a href="/"> <img src="img/facebook.svg" alt=""></a>
+                <a href="/"><img src="img/twitter.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="experts__card">
+            <div class="experts__img"><img src="img/experts-img2.png" alt=""></div>
+            <div class="experts__content">
+              <div class="experts__content-name">
+                <div class="title-6 experts__content-title"><h6>Giovani Bacardo</h6></div>
+                <div class="introduction experts__introduction"><span>Farmer</span></div>
+              </div>
+              <div class="experts__content-img">
+                <a href="/"><img src="img/instagram.svg" alt=""></a>
+                <a href="/"> <img src="img/facebook.svg" alt=""></a>
+                <a href="/"><img src="img/twitter.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+          <div class="experts__card">
+            <div class="experts__img"><img src="img/experts-img3.png" alt=""></div>
+            <div class="experts__content">
+              <div class="experts__content-name">
+                <div class="title-6 experts__content-title"><h6>Giovani Bacardo</h6></div>
+                <div class="introduction experts__introduction"><span>Farmer</span></div>
+              </div>
+              <div class="experts__content-img">
+                <a href="/"> <img src="img/facebook.svg" alt=""></a>
+                <a href="/"><img src="img/twitter.svg" alt=""></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    @include('partials/soffer.html')
+    @include('partials/subscribe.html')
+  </main>
+  @include('partials/footer.html')
+  @include('partials/scripts.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+
+<div class="site-container">
+  @include('partials/header.html')
+  <main class="main">
+    <section class="page-name-white">
+      <div class="container">
+        <div class="title-2 page-name__title page-name__leafs">
+          <img src="img/page-leaf-left.svg" alt="">
+          <h2>Licenses</h2>
+          <img src="img/page-leaf-right.svg" alt="">
+        </div>
+      </div>
+    </section>
+    @include('partials/copyright.html')
+    @include('partials/subscribe.html')
+  </main>
+  @include('partials/footer.html')
+  @include('partials/scripts.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
+</body>
+
+</html>

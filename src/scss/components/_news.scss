@@ -1,0 +1,141 @@
+.news {
+  padding: rem(177) 0 rem(45);
+
+  &__start {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    color: var(--dark-green);
+    margin-bottom: rem(45);
+  }
+
+  &__name {
+    max-width: rem(700);
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 -23px -50px;
+  }
+
+  &__block {
+    margin: 0 23px 50px;
+    height: rem(592);
+    border-radius: rem(30);
+    width: calc(100% / 2 - 46px);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__date {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: rem(82);
+    height: rem(82);
+    border-radius: rem(41);
+    z-index: 100;
+    position: relative;
+    background-color: var(--white);
+    font-size: rem(25);
+    font-weight: 700;
+    margin-left: rem(30);
+    margin-top: rem(46);
+
+    :not(:first-child) {
+      font-size: rem(20);
+      margin-top: rem(5);
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: rem(524);
+    top: 0;
+    left: 0;
+
+    img {
+      border-radius: rem(30);
+    }
+  }
+
+  &__info {
+    box-shadow: 0px 20px 35px 0px rgba(167, 167, 167, 0.25);
+    width: rem(613);
+    position: relative;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--white);
+    border-radius: 31px 34px 30px 30px;
+    padding: rem(46) rem(57) rem(60);
+
+    img {
+      width: rem(18);
+      height: rem(20);
+    }
+
+    &-name {
+      display: flex;
+      align-items: center;
+
+      span {
+        margin-left: rem(10);
+      }
+    }
+
+    &-btn {
+      margin-top: 16px;
+    }
+  }
+
+  &__content {
+    &-title {
+      margin-top: rem(14);
+    }
+  }
+
+  &__link {
+    width: fit-content;
+    position: relative;
+    margin-top: rem(20);
+
+    span {
+      font-size: rem(20);
+      font-weight: 700;
+    }
+
+    img {
+      width: rem(19);
+      height: rem(19);
+    }
+
+    display: flex;
+    align-items: center;
+
+    :not(:first-child) {
+      margin-left: rem(9);
+    }
+
+    ::after {
+      content: '';
+      position: absolute;
+      bottom: rem(-9);
+      left: 0;
+      height: 2px;
+      background-color: var(--black);
+      width: 100%;
+      transition: var(--hover-transition);
+      transform: scaleX(0);
+    }
+
+    :hover::after {
+      transform: scaleX(1);
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.only {
+  height: Min(83.6vh, 1073px);
+  padding: rem(179) 0;
+  margin-bottom: rem(100);
+  position: relative;
+
+  &__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__description {
+    margin-top: rem(24);
+  }
+
+  &__body {
+    max-width: rem(671);
+    position: relative;
+
+    a {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      margin-top: rem(50);
+      width: rem(101);
+      height: rem(101);
+    }
+  }
+}

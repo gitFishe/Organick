@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+@include('partials/head.html')
+
+<body class="page__body">
+
+
+<div class="site-container">
+  @include('partials/header.html')
+  <main class="main">
+    <section class="page-name">
+      <div class="container">
+        <div class="page-name__bg">
+          <img src="img/titlesingle-bg.png" alt="">
+        </div>
+        <div class="title-1 page-name__title"><h1>Shop Single</h1></div>
+      </div>
+    </section>
+    @include('partials/goods.html')
+    <section class="products padding-m">
+      <div class="container products__container">
+        <div class="title-2"><h2>Related Products</h2></div>
+        <div class="deck products__deck-small">
+          <a href="/" class="card">
+            <div class="card__mark"><p>Vegetable</p></div>
+            <div class="card__img"><img src="img/card-broccoli.png" alt=""></div>
+            <div class="card__title"><p>Calabrese Broccoli</p></div>
+            <div class="card__content">
+              <p>$20.00</p>
+              <p>$13.00</p>
+              <img src="img/card-stars.svg" alt="">
+            </div>
+          </a>
+          <a href="/" class="card">
+            <div class="card__mark"><p>Fresh</p></div>
+            <div class="card__img"><img src="img/card-banana.png" alt=""></div>
+            <div class="card__title"><p>Fresh Banana Fruites</p></div>
+            <div class="card__content">
+              <p>$20.00</p>
+              <p>$14.00</p>
+              <img src="img/card-stars.svg" alt="">
+            </div>
+          </a>
+          <a href="/" class="card">
+            <div class="card__mark"><p>Millets</p></div>
+            <div class="card__img"><img src="img/card-nuts.png" alt=""></div>
+            <div class="card__title"><p>White Nuts</p></div>
+            <div class="card__content">
+              <p>$20.00</p>
+              <p>$15.00</p>
+              <img src="img/card-stars.svg" alt="">
+            </div>
+          </a>
+          <a href="/" class="card">
+            <div class="card__mark"><p>Vegetable</p></div>
+            <div class="card__img"><img src="img/card-tomatoes.png" alt=""></div>
+            <div class="card__title"><p>Vegan Red Tomato</p></div>
+            <div class="card__content">
+              <p>$20.00</p>
+              <p>$17.00</p>
+              <img src="img/card-stars.svg" alt="">
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    @include('partials/subscribe.html')
+  </main>
+  @include('partials/footer.html')
+  @include('partials/scripts.html')
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.squares {
+  background-color: #F1F8F4;
+  padding: rem(187) 0;
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: rem(583);
+    width: calc(100% / 3 - rem(42));
+    position: relative;
+  }
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+  }
+
+  &__text {
+    z-index: 1000;
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: rem(36) rem(83);
+    color: var(--dark-green);
+    font-size: rem(25);
+    font-weight: 500;
+  }
+}

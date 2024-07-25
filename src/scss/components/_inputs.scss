@@ -1,0 +1,39 @@
+.inputs {
+  padding-top: rem(80);
+
+  &__container {
+    max-width: rem(1214);
+  }
+
+  &__main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    button {
+      margin-top: rem(10);
+    }
+  }
+
+  &__block {
+    width: rem(569);
+    margin-bottom: rem(50);
+
+    span {
+      font-size: rem(18);
+      font-weight: 600;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    input, textarea {
+      margin-top: rem(30);
+    }
+
+    &-big {
+      width: 100%;
+    }
+  }
+}
